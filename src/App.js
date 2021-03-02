@@ -61,6 +61,49 @@ function App() {
       <Alert variant="primary">Alert</Alert>
       </Container>
       </header>
+      <Container>
+  {/* Stack the columns on mobile by making one full-width and the other half-width */}
+        <Row>
+          <Col className="col" xs={12} md={8}>
+            xs=12 md=8
+          </Col>
+          <Col className="col" xs={6} md={4}>
+            xs=6 md=4
+          </Col>
+        </Row>
+
+        {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+        <Row>
+          <Col className="col" xs={6} md={4}>
+            xs=6 md=4
+          </Col>
+          <Col className="col" xs={6} md={4}>
+            xs=6 md=4
+          </Col>
+          <Col className="col" xs={6} md={4}>
+            xs=6 md=4
+          </Col>
+        </Row>
+
+        {/* Columns are always 50% wide, on mobile and desktop */}
+        <Row>
+          <Col className="col" xs={6}>xs=6</Col>
+          <Col className="col" xs={6}>xs=6</Col>
+        </Row>
+      </Container>
+      <br></br>
+      <Container>
+        <Row xs={2} md={4} lg={6}>
+          <Col className="col">1 of 2</Col>
+          <Col className="col">2 of 2</Col>
+        </Row>
+        <Row xs={1} md={2}>
+          <Col className="col">1 of 3</Col>
+          <Col className="col">2 of 3</Col>
+          <Col className="col">3 of 3</Col>
+        </Row>
+      </Container>
+
     </div>
   );
 }
